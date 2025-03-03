@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYC Subway Departure Widget</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <section id="app info">
+        <div class="container text-center mt-5">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-primary-emphasis">NYC Subway Departure Widget</h1>
+                    <p class="text-light-emphasis">Select a station below to view the next 5 departure times</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="station selection form">
+        <form action="/submit" method="POST">
+            <div class="container text-start">
+                <div class="row gy-2">
+                    <div class="col-12">
+                        <label class="form-label text-info-emphasis" for="station">Station:</label>
+                        <select class="form-select text-light-emphasis" id="station" name="station" required>
+                            <option value="" disabled selected>Select a station</option>
+                            <option value="station1">Astoria-Ditmars Blvd</option>
+                            <option value="station3">Astoria Blvd</option>
+                            <option value="station4">30th Ave</option>
+                            <option value="station5">Broadway</option>
+                            <option value="station6">36th Ave</option>
+                            <option value="station8">39th Ave-Dutch Kills</option>
+                            <option value="station9">Queensboro Plaza</option>
+                            <!-- Add more stations as needed -->
+                        </select>
+                    </div>    
+                    <div class="col-12">
+                        <label class="form-label text-info-emphasis" for="line">Line:</label>
+                        <select class="form-select text-light-emphasis" id="line" name="line" required>
+                            <option value="" disabled selected>Select a line</option>
+                            <option value="N">N - Express</option>
+                            <option value="W">W - Local</option>
+                            <!-- Add more lines as needed -->
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label text-info-emphasis" for="direction">Direction:</label>
+                        <select class="form-select text-light-emphasis" id="direction" name="direction" required>
+                            <option value="" disabled selected>Select a direction</option>
+                            <option value="North">Northbound</option>
+                            <option value="South">Southbound</option>
+                            <!-- Add more lines as needed -->
+                        </select>
+                    </div>
+                    <div class="col-12 text-end">
+                        <button class="btn btn-primary btn-lg mt-3 w-25" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
