@@ -3,19 +3,18 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-/*
 $white: #ffffff;
 
 $theme-colors: (
-    "light":      #48988a,
-    "dark":       #09012a,
-    "primary":    #f3b624,
-    "secondary":  #a92f1e,
-    "info":       #2e4564,
-    "success":    #4ba40c,
-    "warning":    #ffc045,
-    "danger":     #f1055c,
-);*/
+    "light":      #f8f9fa,
+    "dark":       #212529,
+    "primary":    #B9FFF8,
+    "secondary":  #6FEDD6,
+    "info":       #FF9551,
+    "success":    #16C47F,
+    "warning":    #FFD65A,
+    "danger":     #FF4A4A,
+);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
