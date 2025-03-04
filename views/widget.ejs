@@ -12,44 +12,45 @@
         <div class="container text-center mt-5">
             <div class="row">
                 <div class="col">
-                    <h1 class="text-primary">NYC Subway Departure Widget</h1>
+                    <h1 class="text-primary display-2"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" width="60" height="60" viewBox="0 0 15 30" fill="#B9FFF8"><path d="M17.5,0H6.5C4.019,0,2,2.019,2,4.5V14.5c0,2.481,2.019,4.5,4.5,4.5h.117l-2.546,4.243c-.143,.237-.065,.544,.172,.686,.08,.048,.169,.071,.257,.071,.169,0,.335-.086,.429-.243l2.854-4.757h8.434l2.854,4.757c.094,.156,.26,.243,.429,.243,.088,0,.177-.023,.257-.071,.237-.142,.314-.449,.172-.686l-2.546-4.243h.117c2.481,0,4.5-2.019,4.5-4.5V4.5c0-2.481-2.019-4.5-4.5-4.5Zm-5,12V5h8.5v7H12.5Zm-9.5,0V5H11.5v7H3ZM6.5,1h11c1.76,0,3.221,1.306,3.464,3H3.036c.243-1.694,1.704-3,3.464-3Zm11,17H6.5c-1.93,0-3.5-1.57-3.5-3.5v-1.5h3v1.5c0,.276,.224,.5,.5,.5s.5-.224,.5-.5v-1.5h10v1.5c0,.276,.224,.5,.5,.5s.5-.224,.5-.5v-1.5h3v1.5c0,1.93-1.57,3.5-3.5,3.5Z"/></svg> NYC Subway Widget</h1>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="station departure times">
-        <div class="container text-center mt-5">
+        <div class="container text-center mt-3">
             <div class="row gy-1">
-                <div class="col-12">
+                <div class="col-12 text-center">
                     <% if (line === "N") { %>
-                        <svg height="50" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.41421" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="45" fill="#fccc0a" r="45"/><path d="m25.8431 21.0091h10.5143l19.1081 33.4961v-33.4961h9.3424v47.9818h-10.026l-19.5964-34.082v34.082h-9.3424z" fill-rule="nonzero"/></svg>
+                        <svg height="100" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.41421" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><circle cx="45" cy="45" fill="#fccc0a" r="45"/><path d="m25.8431 21.0091h10.5143l19.1081 33.4961v-33.4961h9.3424v47.9818h-10.026l-19.5964-34.082v34.082h-9.3424z" fill-rule="nonzero"/></svg>
                     <% } else if (line === "W") { %>
-                        <svg height="50" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.41421" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><circle cx="45.00031195" cy="44.99968405" fill="#fccc0a" r="45.00028575" stroke-width="1.02285"/><path d="m6.511-10.655 5.006 21.667 1.079 6.032 1.103-5.904 4.262-21.795h8.343l4.493 21.667 1.155 6.032 1.155-5.801 5.057-21.898h8.036l-10.654 37.84h-7.548l-4.569-22.129-1.335-7.317-1.335 7.317-4.569 22.129h-7.343l-10.73-37.84z" fill-rule="nonzero" transform="matrix(1.26802 0 0 1.26802 16.9029 34.5201)"/></svg>
+                        <svg height="100" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.41421" viewBox="0 0 90 90" xmlns="http://www.w3.org/2000/svg"><circle cx="45.00031195" cy="44.99968405" fill="#fccc0a" r="45.00028575" stroke-width="1.02285"/><path d="m6.511-10.655 5.006 21.667 1.079 6.032 1.103-5.904 4.262-21.795h8.343l4.493 21.667 1.155 6.032 1.155-5.801 5.057-21.898h8.036l-10.654 37.84h-7.548l-4.569-22.129-1.335-7.317-1.335 7.317-4.569 22.129h-7.343l-10.73-37.84z" fill-rule="nonzero" transform="matrix(1.26802 0 0 1.26802 16.9029 34.5201)"/></svg>
                     <% } %>
-                    <h2 class="mt-4 text-info">Next Train Departure</h2>
+                    <h2 class="mt-3 text-info text-start">Next Departure <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 30 30" width="30" height="30" fill="#FF9551">
+                        <path d="m10,23.5c0,.276-.224.5-.5.5H.5c-.276,0-.5-.224-.5-.5s.224-.5.5-.5h9c.276,0,.5.224.5.5ZM.5,20h7c.276,0,.5-.224.5-.5s-.224-.5-.5-.5H.5c-.276,0-.5.224-.5.5s.224.5.5.5Zm0-4h5c.276,0,.5-.224.5-.5s-.224-.5-.5-.5H.5c-.276,0-.5.224-.5.5s.224.5.5.5ZM12,0C5.383,0,0,5.383,0,12c0,.175.003.349.011.522.012.276.252.494.521.478.276-.012.49-.246.478-.521-.007-.159-.01-.318-.01-.478C1,5.935,5.935,1,12,1s11,4.935,11,11c0,5.91-4.621,10.737-10.521,10.99-.276.012-.49.245-.478.521.011.269.233.479.499.479.007,0,.015,0,.022,0,6.437-.275,11.479-5.542,11.479-11.989C24,5.383,18.617,0,12,0Zm.5,6c-.276,0-.5.224-.5.5v5.495c0,.172.089.333.234.424l4,2.505c.083.052.175.076.266.076.166,0,.329-.083.424-.234.146-.234.075-.543-.158-.689l-3.766-2.358v-5.218c0-.276-.224-.5-.5-.5Z"/>
+                      </svg></h2>
                     <% if (timeToNextTrain[0] === "Arriving Now") { %>
-                    <p class="fs-3"><%= timeToNextTrain[0] %></p>
+                    <p class="fs-3 text-start"><%= timeToNextTrain[0] %></p>
                     <% } else { %>
-                    <p class="fs-3"><%= timeToNextTrain[0] %> min</p>
+                    <p class="fs-3 text-start"><%= timeToNextTrain[0] %> min</p>
                     <% } %>
                 </div>
-                <div class="col-12">
-                    <h3 class="text-secondary">Upcoming Departures</h3>
-                    <p class="fs-3"><%= timeToNextTrain[1] %> min</p>
-                    <p class="fs-3"><%= timeToNextTrain[2] %> min</p>
-                    <p class="fs-3"><%= timeToNextTrain[3] %> min</p>
-                    <p class="fs-3"><%= timeToNextTrain[4] %> min</p>
+                <div class="col-12 text-start">
+                    <h3 class="text-secondary">Upcoming <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 30 30" width="30" height="30" fill="#6FEDD6">
+                        <path d="m21.5,7h-5v-1h4.692c-2.023-3.091-5.474-5-9.192-5C5.935,1,1,5.935,1,12s4.935,11,11,11c.052,0,1.377-.068,1.972-.177l.178.984c-.443.08-1.649.192-2.149.192C5.383,24,0,18.617,0,12S5.383,0,12,0c4.04,0,7.789,2.066,10,5.414V.5h1v5c0,.827-.673,1.5-1.5,1.5Zm-2.401,13.404l.646.762c.531-.45,1.025-.947,1.468-1.477l-.768-.641c-.405.485-.858.941-1.347,1.355Zm-3.284,1.916l.346.938c.649-.239,1.283-.539,1.884-.89l-.504-.863c-.551.321-1.131.596-1.726.815Zm7.186-10.32c0,.64-.055,1.28-.163,1.903l.984.172c.119-.681.179-1.378.179-2.075h-1Zm-1.46,5.48l.867.5c.347-.602.643-1.238.878-1.892l-.939-.34c-.217.598-.487,1.181-.806,1.731ZM11.5,5.038v7.283l5.243,3.146.514-.857-4.757-2.854v-6.717h-1Z"/>
+                      </svg></h3>
+                    <p class="fs-3"><%= timeToNextTrain[1] %> min, <%= timeToNextTrain[2] %> min, <%= timeToNextTrain[3] %> min, <%= timeToNextTrain[4] %> min</p>
                 </div>
             </div>
         </div>
     </section>
 
     <form action="/home" method="POST">
-        <div class="container text-center mt-5">
+        <div class="container text-end mt-3">
             <div class="row">
                 <div class="col">
-                    <button class="btn btn-danger btn-lg w-50" id="home">Home <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-house" viewBox="0 0 20 20">
+                    <button class="btn btn-danger btn-sm w-25" id="home">Home <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-house" viewBox="0 0 20 20">
                         <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
                       </svg></button>
                 </div>
