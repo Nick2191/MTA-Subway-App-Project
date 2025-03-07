@@ -66,10 +66,6 @@ app.post("/submit", async (req, res) => {
         }
  });
 
-app.post("/home", (req, res) => {
-    res.render("index.ejs");
-});
-
 app.listen(port, () => {
     console.log(`App is listening on port ${port}`);
 });

@@ -6,15 +6,26 @@
 $white: #ffffff;
 
 $theme-colors: (
-    "light":      #f8f9fa,
-    "dark":       #212529,
-    "primary":    #B9FFF8,
-    "secondary":  #6FEDD6,
-    "info":       #FF9551,
+    "light":      #F5E8D8,
+    "dark":       #1C1C1C,
+    "primary":    #FF4500,
+    "secondary":  #DAA520,
+    "info":       #FF6F61,
     "success":    #16C47F,
     "warning":    #FFD65A,
     "danger":     #FF4A4A,
 );
+
+$body-bg: #F5E8D8;
+
+[data-bs-theme="light"] .form-select {
+    border-color: #1C1C1C; // Change this to your desired border color for light theme
+  }
+  
+  [data-bs-theme="light"] .form-select:focus {
+    border-color: #1C1C1C; // Change this to your desired focus border color for light theme
+    box-shadow: 0 0 0 0.25rem #6e6e6e; // Optional: Add custom box-shadow for light theme
+  }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
